@@ -24,16 +24,16 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller app_gui.py ^
-            --name "Generador_Protocolos" ^
-            --windowed ^
-            --onefile ^
-            --hidden-import=docxtpl ^
-            --hidden-import=jinja2 ^
-            --hidden-import=jinja2.ext ^
-            --hidden-import=python-docx ^
-            --hidden-import=openpyxl ^
-            --collect-all jinja2 ^
+          pyinstaller app_gui.py `
+            --name "Generador_Protocolos" `
+            --windowed `
+            --onefile `
+            --hidden-import=docxtpl `
+            --hidden-import=jinja2 `
+            --hidden-import=jinja2.ext `
+            --hidden-import=openpyxl `
+            --hidden-import=python-docx `
+            --collect-all jinja2 `
             --collect-all docxtpl
 
       - name: Upload artifact
