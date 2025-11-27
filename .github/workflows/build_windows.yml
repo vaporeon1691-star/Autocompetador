@@ -28,11 +28,12 @@ jobs:
             --name "Generador_Protocolos" `
             --windowed `
             --onefile `
+            --add-data "generador.py;." `
+            --hidden-import=generador `
             --hidden-import=docxtpl `
             --hidden-import=jinja2 `
             --hidden-import=jinja2.ext `
             --hidden-import=openpyxl `
-            --hidden-import=python-docx `
             --collect-all jinja2 `
             --collect-all docxtpl
 
